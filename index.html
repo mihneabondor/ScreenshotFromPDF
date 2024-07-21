@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Screenshot Tool</title>
+    <style>
+        #pdf-canvas {
+            border: 1px solid black;
+            position: relative;
+        }
+        #selection {
+            border: 2px dashed red;
+            position: absolute;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="file-input" accept="application/pdf">
+    <br><br>
+    <canvas id="pdf-canvas"></canvas>
+    <div id="selection"></div>
+    <br><br>
+    <input type="number" id="page" min="1" value="1"/>
+    <input type="number" id="zoom" min="1" value="1.2" step="0.1"/>
+    <br><br>
+    <button id="screenshot-btn">Screenshot (sau apasă enter)</button>
+    <br><br>
+    <div id="screenshots"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
