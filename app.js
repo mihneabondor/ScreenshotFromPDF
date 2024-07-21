@@ -139,6 +139,7 @@ function handleScreenshot() {
     screenshotsDiv.appendChild(downloadLink);
     screenshotsDiv.appendChild(document.createElement('br'));
     screenshotsDiv.appendChild(document.createElement('br'));
+    screenshotsDiv.appendChild(document.createElement('hr'));
 
     startX = startY = endX = endY = null;
     selectionDiv.style.display = 'none';
